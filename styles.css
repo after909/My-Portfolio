@@ -1,0 +1,295 @@
+html, body {
+    margin: 0 auto;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    transition: 0.3s;
+}
+
+/* Header */
+
+header {
+    position: relative;
+    top: 0;
+    border: 1px solid black;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 0 2rem;
+    font-size: 3rem;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0 1.5rem;
+}
+nav li {
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+nav a {
+    color: #F0EFF4;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+nav a:hover {
+    color: #390099;
+    transition-duration: 1s;
+}
+
+/* Switch */
+
+.switch {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(39, 38, 38);
+    position: relative;
+}
+.switch-light {
+    background-color: rgb(255, 203, 89);
+}
+
+.flicker {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: 0.3s;
+    box-shadow: 
+        inset 4px 4px 4px rgb(255, 255, 255), 
+        inset -4px -4px 4px rgb(195 193 198 / 90%);
+}
+
+.dark {
+    background-color: rgb(57, 57, 57);
+    transition: 0.3s;
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+
+.dark .flicker {
+    transform: translateX(40px);
+}
+
+
+/* Presentation */
+
+.presentation {
+    display: flex;
+    padding: 2.5rem 0;
+    border: 1px solid black;
+}
+
+.photo-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1%;
+    border: 1px solid black;
+}
+.icon {
+    font-size: 2rem;
+    color: #323232;
+}
+
+.social-media ul{
+    list-style-type: none;
+    padding: 0 0;
+    margin: 0.5rem 0;
+}
+.social-media li {
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+.social-media a {
+    color: #F0EFF4;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+.name {
+    text-align: center;
+    border: 1px solid black;
+}
+
+.name h1 {
+    color:seagreen;
+}
+
+.avatar {
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+}
+
+.biography {
+    border: 1px solid black;
+    margin: auto 1%;
+}
+
+.social-media {
+    border: 1px solid black;
+}
+
+/* Career */
+.career {
+    display: flex;
+    border: 1px solid black;
+    margin: auto 1%;
+
+}
+
+.education {
+    border: 1px solid black;
+    width: 400px;
+}
+.languages {
+    border: 1px solid black;
+    width: 300px;
+}
+ .interests{
+    border: 1px solid black;
+    width: 300px;
+}
+
+.education ul {
+    list-style-type: none;
+    padding: 0 0;
+    margin: 1.2rem 0;
+}
+
+.education .school {
+   padding: 0 1.2rem;
+}
+
+.bullet {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.languages ul {
+    padding: 0 1.3rem;
+    
+}
+.interests ul {
+    padding: 0 1.3rem;
+}
+
+/* Skills */
+
+.programming-skills {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid black;
+}
+
+
+.skills-container {
+    display: flex;
+    align-items: center;
+    width: 48%;
+    height: 52%;
+    justify-content: space-evenly;
+    align-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.skills-images {
+    border: 1px solid black;
+}
+
+.skills-images i {
+    font-size: 5.5rem;
+    color: rgb(185, 52, 59);
+    padding: 0.8rem 0.4rem;
+    text-align: center;
+}
+
+.skills-images figcaption {
+    font-size: 1.2rem;
+    text-align: center;
+    border: 1px solid black;
+}
+
+/* Projects */
+
+.projects {
+    border: 1px solid black;
+}
+
+.projects h2 {
+    text-align: center;
+    border: 1px solid black;
+}
+
+
+.project-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.project-image {
+    border: 1px solid black;
+}
+
+.project-image img {
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+}
+
+.project-image figcaption {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.project-image a {
+    text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+    border: 1px solid black;
+}
