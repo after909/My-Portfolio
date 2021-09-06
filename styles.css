@@ -1,5 +1,8 @@
+/* General */
+
 html, body {
     margin: 0 auto;
+    font-family: 'Lato', sans-serif;;
 }
 
 html {
@@ -8,6 +11,26 @@ html {
 
 body {
     transition: 0.5s;
+}
+
+h1 {
+    font-size: 2.6rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+
+h2 {
+    font-size: 1.95rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
 }
 
 /* Header */
@@ -51,7 +74,7 @@ nav li {
 nav a {
     color: #F33;
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     transition: color 500ms ease-in-out 50ms;
 }
 
@@ -158,9 +181,6 @@ nav a:hover,a:focus {
     color: #fff;
 }
 
-.name h1 {
-    
-}
 
 .avatar {
     width: 400px;
@@ -172,13 +192,18 @@ nav a:hover,a:focus {
 
 .biography {
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .dark .biography{
     color: #fff;
 }
 
-.biography h2 {
-    text-align: center;
+
+.biography p {
+    width: 80%;
+    line-height: 2;
 }
 
 .social-media {
