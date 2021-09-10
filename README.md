@@ -10,4 +10,4 @@ It is responsive and uses light and dark modes.
 
 This is the color palettes used:
 
-![palette](palette.jpg)
+![palette](palette.png)
