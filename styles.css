@@ -19,32 +19,34 @@ body {
     transition: 0.5s;
 }
 
-main {
-    
-}
 
 h1 {
     font-size: 2.1rem;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    color: #484b6a;
 }
 
 
 h2 {
     font-size: 1.6rem;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    text-align: center;
-    color: #484b6a;
 }
 
 h3 {
     font-size: 1.1rem;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    color: #484b6a;
 }
+
+h1, h2, h3 {
+    color: #484b6a;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dark h1, .dark h2, .dark h3{
+    color: #eeeeee;
+}
+
+
+
 
 @media screen and (min-width: 768px) {
     h1 {
@@ -80,7 +82,7 @@ header {
 }
 
 .dark header {
-    background-color: #393939;
+    background-color: #272727;
 }
 
 
@@ -91,7 +93,7 @@ header {
 }
 
 .dark .logo {
-    color: #fff;
+    color: #eeeeee;
 }
 
 
@@ -122,15 +124,20 @@ nav a {
 }
 
 .dark header {
-    border-bottom: white 1px solid;
+    border-bottom: #eeeeee 1px solid;
 }
 
 .dark nav a {
-    color: #FFF;
+    color: #eeeeee;
 }
 
 nav a:hover,a:focus {
     color: #9394a5;
+}
+
+
+.dark nav a:hover, .dark a:focus {
+    color: #5b5b85;
 }
 
 .links {
@@ -145,7 +152,11 @@ nav a:hover,a:focus {
 }
 
 .dark .fa-bars {
-    color: white;
+    color: #eeeeee;
+}
+
+.dark .fa-bars:hover, .dark .fa-bars:focus {
+    color: #5b5b85;
 }
 
 .fa-bars:hover, .fa-bars:focus {
@@ -194,7 +205,7 @@ nav a:hover,a:focus {
 }
 
 .dark {
-    background-color: rgb(57, 57, 57);
+    background-color: #272727;
     transition: 0.5s;
 }
 
@@ -242,7 +253,12 @@ nav a:hover,a:focus {
 }
 
 .dark .icon {
-    color: #46a2e4;
+    color: #eeeeee;
+    transition: color 500ms ease-in-out;
+}
+
+.dark .icon:hover, .dark .icon:focus {
+    color: #5b5b85;
 }
 
 .social-media {
@@ -264,11 +280,11 @@ nav a:hover,a:focus {
 
 .name {
     text-align: center;
-    color: #000;
+    color: #272727;
     padding: 0 0;
 }
 .dark .name {
-    color: #fff;
+    color: #eeeeee;
 }
 
 
@@ -295,6 +311,10 @@ nav a:hover,a:focus {
     background-color: #e4e5f1;
 }
 
+.dark .about-me {
+    background-color: #313131;
+}
+
 .biography {
     display: flex;
     flex-direction: column;
@@ -303,7 +323,7 @@ nav a:hover,a:focus {
     justify-content: center;
 }
 .dark .biography{
-    color: #fff;
+    color: #eeeeee;
 }
 
 
@@ -312,9 +332,6 @@ nav a:hover,a:focus {
     line-height: 2.0;
 }
 
-.social-media {
-
-}
 
 /* Career */
 
@@ -330,7 +347,7 @@ nav a:hover,a:focus {
 }
 
 .dark .career {
-    color: #fff;
+    color: #eeeeee;
 }
 
 .education, .languages, .interests {
@@ -363,7 +380,7 @@ nav a:hover,a:focus {
 
 @media screen and (min-width: 768px) {
     .education, .interests, .languages {
-        width: 28%;
+        width: 26.6%;
         padding: 1.5rem 1.2rem;
     }
 }
@@ -383,7 +400,7 @@ nav a:hover,a:focus {
 }
 
 .dark .programming-skills {
-    color: #fff;
+    color: #eeeeee;
 }
 
 .skills-container {
@@ -434,6 +451,10 @@ nav a:hover,a:focus {
     color: #211F1F;
 }
 
+.dark .skills-images .fa-github {
+    color: #eeeeee;
+}
+
 .skills-images figcaption {
     font-size: 1.1rem;
     text-align: center;
@@ -454,7 +475,8 @@ nav a:hover,a:focus {
     background-color: #e4e5f1;
 }
 .dark .projects {
-    color: #fff;
+    color: #eeeeee;
+    background-color: #313131;
 }
 
 .projects h2 {
@@ -474,6 +496,16 @@ nav a:hover,a:focus {
     border: #9394a5 1px solid;
 }
 
+
+.dark .project-image {
+    border: #aaaaff 1px solid;
+}
+
+.dark .project-image img {
+    border-bottom: #aaaaff 1px solid;
+}
+
+
 .project-image img {
     width: 260px;
     height: 260px;
@@ -485,6 +517,20 @@ nav a:hover,a:focus {
 .project-image img:hover, .project-image img:focus {
     background-color: #484b6a;
 }
+
+
+.dark .project-image img {
+    background-color: #5b5b85;
+    border-bottom: #aaaaff solid 1px;
+    transition: all 300ms ease-in-out;
+}
+
+.dark .project-image img:hover, .dark .project-image img:focus {
+    background-color: #aaaaff;
+}
+
+
+
 
 .project-image figcaption {
     text-align: center;
@@ -498,31 +544,32 @@ nav a:hover,a:focus {
     color: #d2d3db;
 }
 
+.dark .project-image figcaption {
+    background-color: #313131;
+    transition: 300ms ease-in-out;
+}
+
+.dark .project-image figcaption:hover, .dark .project-image figcaption:focus {
+    color: #5b5b85;
+}
+
 
 .project-image a {
     text-decoration: none;
     color: #484b6a;
     background-color: #fafafa;
-
 }
-.project-image:hover, .project-image:focus {
-    text-decoration: none;
-    color: #d2d3db;
-}
-
-
-.dark .project-image {
-    border: white 1px solid;
-}
-
-.dark .project-image img {
-    border-bottom: white solid 1px;
-}
-
 
 .dark .project-image a {
-    color: #fff;
+    color: #eeeeee;
+    background-color: #313131;
 }
+
+.project-image:hover, .project-image:focus {
+    text-decoration: none;
+    color: #eeeeee;
+}
+
 
 @media screen and (min-width: 1024px) {
     .project-image img {
