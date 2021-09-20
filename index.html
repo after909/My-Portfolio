@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -12,33 +13,41 @@
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
     <!--Header and navigation links-->
     <header>
-        <div class="logo"><i class="fa fa-briefcase"></i></div>
         <nav>
-            <ul>
-                <li><a href="#about-me">About me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+            <ul class="menu">
+                <li class="logo"><i class="fa fa-briefcase"></i></li>
+                <li class="mode"><div class="switch">
+                    <div class="flicker"></div>
+                    <div class="moon"></div>
+                </div></li>
+                <li class="item"><a href="#about-me">About me</a></li>
+                <li class="item"><a href="#skills">Skills</a></li>
+                <li class="item"><a href="#projects">Projects</a></li>
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
             </ul>
+<<<<<<< HEAD
+            
+=======
             <div class="switch">
                 <div class="flicker"></div>
                 <div class="moon"></div>
             </div>
             <div class="links"><i class="fas fa-bars"></i></div>
+>>>>>>> fb979b8b6d12f5f4d6f51d4345d82eb5de16d82d
         </nav>
-        
-
     </header>
     <!--Content-->
     <main>
-       <section id="about-me" class="presentation">
-           <div class="photo-name">
+        <section id="about-me" class="presentation">
+            <div class="photo-name">
                 <div class="avatar-container">
                     <img class="avatar" src="./images/avatar.png" alt="avatar" srcset="">
                 </div>
@@ -54,41 +63,28 @@
                         <li><a href="mailto:eduardovargas1207@outlook.com"><i class="fas fa-envelope-square icon"></i></a></li>
                     </ul>
                 </div>
-           </div>
-            
-           <div class="about-me">
-               <div class= "biography">
+            </div>
+
+            <div class="about-me">
+                <div class="biography">
                     <h2>About me</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem autem repellat aperiam saepe? Veniam quae soluta
-                        architecto tempora iure obcaecati. Et saepe ullam ut aliquid architecto dolore placeat doloribus quia Lorem ipsum,
-                        dolor sit amet consectetur adipisicing elit. Ducimus delectus, magnam facere laborum ipsa ex ratione sed ipsam
-                        ullam, tenetur id, omnis aperiam! Quibusdam ut id unde corrupti dignissimos labore? Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Doloribus suscipit reprehenderit ratione similique, soluta, praesentium quia id et
-                        quaerat, nam iusto unde consequatur hic? Minima sit pariatur necessitatibus quia doloribus.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem autem repellat aperiam saepe? Veniam quae soluta
-                        architecto tempora iure obcaecati. Et saepe ullam ut aliquid architecto dolore placeat doloribus quia Lorem ipsum,
-                        dolor sit amet consectetur adipisicing elit. Ducimus delectus, magnam facere laborum ipsa ex ratione sed ipsam
-                        ullam, tenetur id, omnis aperiam! Quibusdam ut id unde corrupti dignissimos labore? Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Doloribus suscipit reprehenderit ratione similique, soluta, praesentium quia id et
-                        quaerat, nam iusto unde consequatur hic? Minima sit pariatur necessitatibus quia doloribus.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem autem repellat aperiam saepe? Veniam quae soluta
-                        architecto tempora iure obcaecati. Et saepe ullam ut aliquid architecto dolore placeat doloribus quia Lorem ipsum,
-                        dolor sit amet consectetur adipisicing elit. Ducimus delectus, magnam facere laborum ipsa ex ratione sed ipsam
-                        ullam, tenetur id, omnis aperiam! Quibusdam ut id unde corrupti dignissimos labore? Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Doloribus suscipit reprehenderit ratione similique, soluta, praesentium quia id et
-                        quaerat, nam iusto unde consequatur hic? Minima sit pariatur necessitatibus quia doloribus.</p>
-               </div>
-               <div class="career">
+                    <p>Hello, I am Eduardo Vargas, graduated from Mechatronics engineering and working as hardware engineer in eCAD design position. Currently, I am studying full stack developer at CodeAcademy website.</p>
+                    <p>My main goals is to develop some web applications and keep learning about programming. I am really excited to take challenges and to come up with creative and fresh solutions. </p>
+                    <p>I have a lot of hobbies such as playing musical instruments, photography, learn new languages, ride bicycle, watch movies, listen to new music and others. I enjoy to experiment new sensations and innovate in every aspect of my life.</p>
+                </div>
+                <div class="career">
                     <div class="education">
                         <h3>Education</h3>
                         <ul>
-                            <li >BS in Mechatronics Engineering</li>
+                            <li>BS in Mechatronics Engineering</li>
                             <ul>
-                                <li class= "school"><i class="fas fa-graduation-cap bullet"></i> Universidad Autónoma de Ciudad Juárez</li>
+                                <li class="school"><i class="fas fa-graduation-cap bullet"></i> Universidad Autónoma de
+                                    Ciudad Juárez</li>
                             </ul>
                             <li>MBA in Quality and Productivity</li>
                             <ul>
-                                <li class= "school"><i class="fas fa-graduation-cap bullet"></i> Universidad Tecmilenio</li>
+                                <li class="school"><i class="fas fa-graduation-cap bullet"></i> Universidad Tecmilenio
+                                </li>
                             </ul>
                         </ul>
                     </div>
@@ -110,12 +106,14 @@
                             <li>Big data</li>
                         </ul>
                     </div>
-               </div>
-               
-           </div>
-       </section>
-       <section id="skills" class="programming-skills">
-            <div><h2>Skills</h2></div>
+                </div>
+
+            </div>
+        </section>
+        <section id="skills" class="programming-skills">
+            <div>
+                <h2>Skills</h2>
+            </div>
             <div class="skills-container">
                 <figure class="skills-images">
                     <i class="fab fa-html5"></i>
@@ -146,10 +144,12 @@
                     <figcaption>GitHub</figcaption>
                 </figure>
             </div>
-       </section>
-       <section id="projects" class="projects">
-           <div><h2>Projects</h2></div>
-           <div class="project-container">
+        </section>
+        <section id="projects" class="projects">
+            <div>
+                <h2>Projects</h2>
+            </div>
+            <div class="project-container">
                 <figure class="project-image">
                     <a href="https://after909.github.io/My-Portfolio/">
                         <img src="./images/undraw_Portfolio_update_re_jqnp.svg" alt="my-portfolio" srcset="">
@@ -166,7 +166,7 @@
                     <a href="https://after909.github.io/Company-Home-Page-Challenge-Project-/">
                         <img src="./images/undraw_meet_the_team_e5b7.svg" alt="company-page" srcset="">
                         <figcaption>Company home page</figcaption>
-                    </a>                   
+                    </a>
                 </figure>
                 <figure class="project-image">
                     <a href="https://after909.github.io/excursion/">
@@ -186,13 +186,13 @@
                         <figcaption>Mixed Messages</figcaption>
                     </a>
                 </figure>
-           </div>
-       </section>
+            </div>
+        </section>
     </main>
     <footer>
-       <div>
-           <p>Created by Eduardo Vargas</p>
-       </div> 
+        <div>
+            <p>Created by Eduardo Vargas</p>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
